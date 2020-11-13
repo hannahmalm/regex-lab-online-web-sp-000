@@ -1,7 +1,7 @@
 def starts_with_a_vowel?(word)
   #scan would return true for any vowel in a word
   #match is looking for the first letter of the word is a vowel 
-   word.match(/^[aeiouAEIOU]/) ? true : false
+   word.scan(/^[aeiouAEIOU]/) ? true : false
 end  
 
 def words_starting_with_un_and_ending_with_ing(text)
